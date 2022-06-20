@@ -6,7 +6,7 @@
       >Lado 1 :
       <input
         class="js_inputSideOneTriangle"
-        name="triangle: "
+        name="ladouno"
         type="number"
         id="ladouno"
         placeholder="Lado en cm"
@@ -16,7 +16,7 @@
     <label for="ladodos">
       <input
         class="js_inputSideTwoTriangle"
-        name="triangle: "
+        name="ladodos"
         type="number"
         id="ladodos"
         placeholder="Lado en cm"
@@ -26,14 +26,34 @@
     <label for="base">
       <input
         class="js_inputBaseTriangle"
-        name="triangle: "
+        name="base"
         type="number"
         id="base"
         placeholder="Base en cm"
       />
     </label>
-    <button class="js_trianglePerimeterBtn">Calcula el perímetro</button>
+   
+    <button class="js_trianglePerimiterBtn">Calcula el perímetro</button>
+    <p class="js_trianglePerimeterResult"></p>
+    <label for="altura"
+    >Altura :
+    <input
+      class="js_inputHeightArea"
+      name="altura"
+      type="number"
+      id="altura"
+      placeholder="Altura en cm"
+    /><label for="BaseArea"
+    >Base :
+    <input
+      class="js_inputBaseArea"
+      name="base"
+      type="number"
+      id="base"
+      placeholder="Base en cm"
+    />
     <button class="js_triangleAreaBtn">Calcula el Área</button>
+    <p class="js_triangleAreaResult"></p>
     <button class="js_resetBtn">Reset</button>
   </form>
 </section>
