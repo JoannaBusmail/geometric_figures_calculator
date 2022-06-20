@@ -1,10 +1,11 @@
 <section>
-  <form>
+  <form class="js_form">
     <h3>Triangulo</h3>
     <p>Escribe cuanto mide cada lado del cuadrado</p>
     <label for="ladouno"
       >Lado 1 :
       <input
+        class="js_inputSideOneTriangle"
         name="triangle: "
         type="number"
         id="ladouno"
@@ -14,6 +15,7 @@
     Lado 2:
     <label for="ladodos">
       <input
+        class="js_inputSideTwoTriangle"
         name="triangle: "
         type="number"
         id="ladodos"
@@ -23,13 +25,15 @@
     Base:
     <label for="base">
       <input
+        class="js_inputBaseTriangle"
         name="triangle: "
         type="number"
         id="base"
         placeholder="Base en cm"
       />
     </label>
-    <button>Calcula el perímetro</button>
-    <button>Calcula el Área</button>
+    <button class="js_trianglePerimeterBtn">Calcula el perímetro</button>
+    <button class="js_triangleAreaBtn">Calcula el Área</button>
+    <button class="js_resetBtn">Reset</button>
   </form>
 </section>
