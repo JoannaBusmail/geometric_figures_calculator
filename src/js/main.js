@@ -27,9 +27,9 @@ const triangleAreaBtn = document.querySelector('.js_triangleAreaBtn');
 const triangleAreaResult = document.querySelector('.js_triangleAreaResult');
 //CIRCLE ELEMENTS
 const inputRadiusCircle = document.querySelector('.js_inputRadiusCircle');
-const circlePerimeterBtn = document.querySelector('.js_circlePermiterBtn');
+const circlePerimeterBtn = document.querySelector('.js_circlePerimeterBtn');
 const circlePerimeterResult = document.querySelector(
-  '.js_circlePermiterResult'
+  '.js_circlePerimeterResult'
 );
 const circleAreaBtn = document.querySelector('.js_circleAreaBtn');
 const circleAreaResult = document.querySelector('.js_circleAreaResult');
