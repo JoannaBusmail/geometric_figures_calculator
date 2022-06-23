@@ -5,7 +5,7 @@
       <p>Escribe cuanto mide el radio del circulo</p>
       <label for="radius">Radio: </label>
       <input
-        class="content input js_inputRadiusCircle"
+        class="content input js_inputRadiusCircle js_resetInputCircle"
         name="radius"
         type="number"
         id="radius"
@@ -14,10 +14,12 @@
       <button class="content button js_circlePerimeterBtn">
         Calcula el diámetro
       </button>
-      <div class="content js_circlePerimeterResult"></div>
+      <div
+        class="content js_circlePerimeterResult js_resetPerimeterResultCirc"
+      ></div>
       <button class="content button js_circleAreaBtn">Calcula el Área</button>
-      <div class="content js_circleAreaResult"></div>
-      <button class="content button js_resetBtn">Reset</button>
+      <div class="content js_circleAreaResult js_resetAreaCirc"></div>
+      <button class="content button js_resetBtnCirc">Reset</button>
     </div>
   </form>
 </section>

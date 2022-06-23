@@ -1,7 +1,29 @@
 'use strict';
 // GENERAL ELEMENTS
 const form = document.querySelector('.js_form');
+
 // RESET ELEMENTS
+//***SQUARE
+const resetBtnSq = document.querySelector('.js_resetBtnSq');
+const resetInputSq = document.querySelector('.js_resetInputSq');
+const resetPerResultSq = document.querySelector('.js_resetPerResultSq');
+const resetAreaResultSq = document.querySelector('.js_resetAreaResultSq');
+//***TRIANGLE
+const resetInputOne = document.querySelector('.js_resetInputOne');
+const resetInputTwo = document.querySelector('.js_resetInputTwo');
+const resetInputThree = document.querySelector('.js_resetInputThree');
+const resetPerimeterTri = document.querySelector('.js_resetPerimeterTri');
+const resetInputH = document.querySelector('.js_resetInputH');
+const resetInputB = document.querySelector('.js_resetInputB');
+const resetResultArea = document.querySelector('.js_resetResultArea');
+const resetBtnTri = document.querySelector('.js_resetBtnTri');
+//**circle */
+const resetInputCircle = document.querySelector('.js_resetInputCircle');
+const resetPerimeterResultCirc = document.querySelector(
+  '.js_resetPerimeterResultCirc'
+);
+const resetAreaCirc = document.querySelector('.js_resetAreaCirc');
+const resetBtnCirc = document.querySelector('.js_resetBtnCirc');
 
 // SQUARE ELEMENTS
 const inputSquare = document.querySelector('.js_inputSquare');

@@ -71,9 +71,11 @@ body{
         font-size: 14px;
         margin: 6px;
         color: #565757;
+      
     }
 
     .button{
+        width:240px;
       border-radius: 10px ;
       border: none;
       padding: 3px 8px  3px  8px;
@@ -85,9 +87,9 @@ body{
         border-radius: 10px ;
         border: none;
         padding: 3px 8px  3px  8px;
-  
-    
-        background-color: #edeeef;
+  background-color: #edeeef;
+  text-align: center;
+  font-size: 12px;
       
     }
 

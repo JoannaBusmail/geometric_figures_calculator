@@ -1,11 +1,11 @@
 <section>
   <form class="wrapper js_form">
-    <h3 class="subtitle">Triangulo</h3>
+    <h3 class="subtitle">Triángulo</h3>
     <div class="content">
       <p>Escribe cuanto mide cada lado del triángulo</p>
       <label for="ladouno">Lado 1 : </label>
       <input
-        class="content input js_inputSideOneTriangle"
+        class="content input js_inputSideOneTriangle js_resetInputOne"
         name="ladouno"
         type="number"
         id="ladouno"
@@ -14,7 +14,7 @@
 
       <label for="ladodos">Lado 2:</label>
       <input
-        class="content input js_inputSideTwoTriangle"
+        class="content input js_inputSideTwoTriangle js_resetInputTwo"
         name="ladodos"
         type="number"
         id="ladodos"
@@ -23,7 +23,7 @@
 
       <label for="base">Base: </label>
       <input
-        class="content input js_inputBaseTriangle"
+        class="content input js_inputBaseTriangle js_resetInputThree"
         name="base"
         type="number"
         id="base"
@@ -33,10 +33,10 @@
       <button class="content button js_trianglePerimiterBtn">
         Calcula el perímetro
       </button>
-      <p class="content js_trianglePerimeterResult"></p>
+      <p class="content js_trianglePerimeterResult js_resetPerimeterTri"></p>
       <label for="altura"> Altura :</label>
       <input
-        class="content input js_inputHeightArea"
+        class="content input js_inputHeightArea js_resetInputH"
         name="altura"
         type="number"
         id="altura"
@@ -44,7 +44,7 @@
       />
       <label for="BaseArea">Base :</label>
       <input
-        class="content input js_inputBaseArea"
+        class="content input js_inputBaseArea js_resetInputB"
         name="base"
         type="number"
         id="base"
@@ -52,8 +52,8 @@
       />
 
       <button class="content button js_triangleAreaBtn">Calcula el Área</button>
-      <p class="content js_triangleAreaResult"></p>
-      <button class="content button js_resetBtn">Reset</button>
+      <p class="content js_triangleAreaResult js_resetResultArea"></p>
+      <button class="content button js_resetBtnTri">Reset</button>
     </div>
   </form>
 </section>
