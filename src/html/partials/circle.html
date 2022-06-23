@@ -1,19 +1,23 @@
 <section>
-  <form class="js_form">
-    <h3>Círculo</h3>
-    <p>Escribe cuanto mide el radio del circulo</p>
-    <label for="radius">Radio: </label>
-    <input
-      class="js_inputRadiusCircle"
-      name="radius"
-      type="number"
-      id="radius"
-      placeholder="Radio en cm"
-    />
-    <button class="js_circlePerimeterBtn">Calcula el diámetro</button>
-    <div class="js_circlePerimeterResult"></div>
-    <button class="js_circleAreaBtn">Calcula el Área</button>
-    <div class="js_circleAreaResult"></div>
-    <button class="js_resetBtn">Reset</button>
+  <form class="wrapper js_form">
+    <h3 class="subtitle">Círculo</h3>
+    <div class="content">
+      <p>Escribe cuanto mide el radio del circulo</p>
+      <label for="radius">Radio: </label>
+      <input
+        class="content input js_inputRadiusCircle"
+        name="radius"
+        type="number"
+        id="radius"
+        placeholder="Radio en cm"
+      />
+      <button class="content button js_circlePerimeterBtn">
+        Calcula el diámetro
+      </button>
+      <div class="content js_circlePerimeterResult"></div>
+      <button class="content button js_circleAreaBtn">Calcula el Área</button>
+      <div class="content js_circleAreaResult"></div>
+      <button class="content button js_resetBtn">Reset</button>
+    </div>
   </form>
 </section>

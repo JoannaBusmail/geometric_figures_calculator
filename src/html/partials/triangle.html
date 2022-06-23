@@ -1,59 +1,59 @@
 <section>
-  <form class="js_form">
-    <h3>Triangulo</h3>
-    <p>Escribe cuanto mide cada lado del triángulo</p>
-    <label for="ladouno"
-      >Lado 1 :
+  <form class="wrapper js_form">
+    <h3 class="subtitle">Triangulo</h3>
+    <div class="content">
+      <p>Escribe cuanto mide cada lado del triángulo</p>
+      <label for="ladouno">Lado 1 : </label>
       <input
-        class="js_inputSideOneTriangle"
+        class="content input js_inputSideOneTriangle"
         name="ladouno"
         type="number"
         id="ladouno"
         placeholder="Lado en cm"
       />
-    </label>
-    Lado 2:
-    <label for="ladodos">
+
+      <label for="ladodos">Lado 2:</label>
       <input
-        class="js_inputSideTwoTriangle"
+        class="content input js_inputSideTwoTriangle"
         name="ladodos"
         type="number"
         id="ladodos"
         placeholder="Lado en cm"
       />
-    </label>
-    Base:
-    <label for="base">
+
+      <label for="base">Base: </label>
       <input
-        class="js_inputBaseTriangle"
+        class="content input js_inputBaseTriangle"
         name="base"
         type="number"
         id="base"
         placeholder="Base en cm"
       />
-    </label>
-   
-    <button class="js_trianglePerimiterBtn">Calcula el perímetro</button>
-    <p class="js_trianglePerimeterResult"></p>
-    <label for="altura"
-    >Altura :
-    <input
-      class="js_inputHeightArea"
-      name="altura"
-      type="number"
-      id="altura"
-      placeholder="Altura en cm"
-    /><label for="BaseArea"
-    >Base :
-    <input
-      class="js_inputBaseArea"
-      name="base"
-      type="number"
-      id="base"
-      placeholder="Base en cm"
-    />
-    <button class="js_triangleAreaBtn">Calcula el Área</button>
-    <p class="js_triangleAreaResult"></p>
-    <button class="js_resetBtn">Reset</button>
+
+      <button class="content button js_trianglePerimiterBtn">
+        Calcula el perímetro
+      </button>
+      <p class="content js_trianglePerimeterResult"></p>
+      <label for="altura"> Altura :</label>
+      <input
+        class="content input js_inputHeightArea"
+        name="altura"
+        type="number"
+        id="altura"
+        placeholder="Altura en cm"
+      />
+      <label for="BaseArea">Base :</label>
+      <input
+        class="content input js_inputBaseArea"
+        name="base"
+        type="number"
+        id="base"
+        placeholder="Base en cm"
+      />
+
+      <button class="content button js_triangleAreaBtn">Calcula el Área</button>
+      <p class="content js_triangleAreaResult"></p>
+      <button class="content button js_resetBtn">Reset</button>
+    </div>
   </form>
 </section>

@@ -1,7 +1,8 @@
 'use strict';
 // GENERAL ELEMENTS
 const form = document.querySelector('.js_form');
-const resetBtn = document.querySelector('.js_resetBtn');
+// RESET ELEMENTS
+
 // SQUARE ELEMENTS
 const inputSquare = document.querySelector('.js_inputSquare');
 const squarePerimeterBtn = document.querySelector('.js_squarePermiterBtn');

@@ -1,19 +1,23 @@
 <section>
-  <form class="js_form">
-    <h3>Cuadrado</h3>
-    <p>Escribe cuanto mide cada lado del cuadrado</p>
-    <label for="square">Lado: </label>
-    <input
-      class="js_inputSquare"
-      name="square"
-      type="number"
-      id="square"
-      placeholder="Lado en cm"
-    />
-    <button class="js_squarePermiterBtn">Calcula el perímetro</button>
-    <div class="js_squarePerimeterResult"></div>
-    <button class="js_squareAreaBtn">Calcula el Área</button>
-    <div class="js_squareAreaResult"></div>
-    <button class="js_resetBtn">Reset</button>
+  <form class="wrapper js_form">
+    <h3 class="subtitle">Cuadrado</h3>
+    <div class="content">
+      <p>Escribe cuanto mide cada lado del cuadrado</p>
+      <label for="square">Lado:</label>
+      <input
+        class="content input js_inputSquare"
+        name="square"
+        type="number"
+        id="square"
+        placeholder="Lado en cm"
+      />
+      <button class="content button js_squarePermiterBtn">
+        Calcula el perímetro
+      </button>
+      <div class="content js_squarePerimeterResult"></div>
+      <button class="content button js_squareAreaBtn">Calcula el Área</button>
+      <div class="js_squareAreaResult"></div>
+      <button class="content button js_resetBtn">Reset</button>
+    </div>
   </form>
 </section>
