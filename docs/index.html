@@ -2,67 +2,143 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometric shapes calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&family=Open+Sans&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&family=Open+Sans&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&family=Open+Sans&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
   </head>
-
   <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+    <header class="header">
+      <h1 class="header__title">Geometric Shapes Calculator</h1>
+    </header>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+    <div class="wrapperCards">
+      <section>
+        <form class="wrapper js_form">
+          <h3 class="subtitle">Cuadrado</h3>
+          <div class="content">
+            <p>Escribe cuanto mide cada lado del cuadrado</p>
+            <label for="square">Lado:</label>
+            <input
+              class="content input js_resetInputSq js_inputSquare"
+              name="square"
+              type="number"
+              id="square"
+              placeholder="Lado en cm"
+            />
+            <button class="content button js_squarePermiterBtn">
+              Calcula el perímetro
+            </button>
+            <div class="content js_squarePerimeterResult js_resetPerResultSq"></div>
+            <button class="content button js_squareAreaBtn">Calcula el Área</button>
+            <div class="js_squareAreaResult js_resetAreaResultSq"></div>
+            <button class="content button js_resetBtnSq">Reset</button>
+          </div>
+        </form>
+      </section>
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
+      <section>
+        <form class="wrapper js_form">
+          <h3 class="subtitle">Triángulo</h3>
+          <div class="content">
+            <p>Escribe cuanto mide cada lado del triángulo</p>
+            <label for="ladouno">Lado 1 : </label>
+            <input
+              class="content input js_inputSideOneTriangle js_resetInputOne"
+              name="ladouno"
+              type="number"
+              id="ladouno"
+              placeholder="Lado en cm"
+            />
 
-          </li>
-        </ul>
-      </main>
+            <label for="ladodos">Lado 2:</label>
+            <input
+              class="content input js_inputSideTwoTriangle js_resetInputTwo"
+              name="ladodos"
+              type="number"
+              id="ladodos"
+              placeholder="Lado en cm"
+            />
 
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
+            <label for="base">Base: </label>
+            <input
+              class="content input js_inputBaseTriangle js_resetInputThree"
+              name="base"
+              type="number"
+              id="base"
+              placeholder="Base en cm"
+            />
 
-        </small>
-      </footer>
+            <button class="content button js_trianglePerimiterBtn">
+              Calcula el perímetro
+            </button>
+            <p class="content js_trianglePerimeterResult js_resetPerimeterTri"></p>
+            <label for="altura"> Altura :</label>
+            <input
+              class="content input js_inputHeightArea js_resetInputH"
+              name="altura"
+              type="number"
+              id="altura"
+              placeholder="Altura en cm"
+            />
+            <label for="BaseArea">Base :</label>
+            <input
+              class="content input js_inputBaseArea js_resetInputB"
+              name="base"
+              type="number"
+              id="base"
+              placeholder="Base en cm"
+            />
+
+            <button class="content button js_triangleAreaBtn">Calcula el Área</button>
+            <p class="content js_triangleAreaResult js_resetResultArea"></p>
+            <button class="content button js_resetBtnTri">Reset</button>
+          </div>
+        </form>
+      </section>
+
+      <section>
+        <form class="wrapper js_form">
+          <h3 class="subtitle">Círculo</h3>
+          <div class="content">
+            <p>Escribe cuanto mide el radio del circulo</p>
+            <label for="radius">Radio: </label>
+            <input
+              class="content input js_inputRadiusCircle js_resetInputCircle"
+              name="radius"
+              type="number"
+              id="radius"
+              placeholder="Radio en cm"
+            />
+            <button class="content button js_circlePerimeterBtn">
+              Calcula el diámetro
+            </button>
+            <div
+              class="content js_circlePerimeterResult js_resetPerimeterResultCirc"
+            ></div>
+            <button class="content button js_circleAreaBtn">Calcula el Área</button>
+            <div class="content js_circleAreaResult js_resetAreaCirc"></div>
+            <button class="content button js_resetBtnCirc">Reset</button>
+          </div>
+        </form>
+      </section>
 
     </div>
-    <script src="./assets/js/main.js"></script>
+    <script type="text/Javascript" src="./assets/js/main.js"></script>
   </body>
 </html>
